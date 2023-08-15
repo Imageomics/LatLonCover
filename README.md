@@ -9,7 +9,7 @@ Land usage descriptions for neighborhoods around given lat/long
 
 We use locations from citizen science organisms reporting.
 
-"iNaturalist is a global community of naturalists, scientists, and members of the public sharing over a million wildlife sightings to teach one another about the natural world while creating high-quality citizen science data for science and conservation" [1](https://api.inaturalist.org/v1/docs/ ).
+"iNaturalist is a global community of naturalists, scientists, and members of the public sharing over a million wildlife sightings to teach one another about the natural world while creating high-quality citizen science data for science and conservation" [1].
 [iNaturalist API](https://api.inaturalist.org/v1/docs/)
 
 ### Cropland Data Layer (CDL)
@@ -20,6 +20,7 @@ The geospatial data product called the Cropland Data Layer (CDL) is hosted on Cr
 ### References
 
 [1] iNatualist API.(n.d.). https://api.inaturalist.org/v1/docs/ 
+
 [2] Boryan, Claire, Zhengwei Yang, Rick Mueller, and Mike Craig. 2011. Monitoring US Agriculture: The US Department of Agriculture, National Agricultural Statistics Service, Cropland Data Layer Program. Geocarto International 26 (5): 341–58. https://doi.org/10.1080/10106049.2011.562309.
 
 [3] Han, Weiguo, Zhengwei Yang, Liping Di, and Richard Mueller. 2012. CropScape: A Web Service Based Application for Exploring and Disseminating US Conterminous Geospatial Cropland Data Products for Decision Support. Computers and Electronics in Agriculture 84 (June): 111–23. https://doi.org/10.1016/j.compag.2012.03.005.
