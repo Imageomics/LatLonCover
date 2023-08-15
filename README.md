@@ -5,7 +5,7 @@ Land usage descriptions for neighborhoods around given lat/long
 
 ### iNaturalist
 
-We use locations from citizen science organism reporting.
+We use locations from citizen science organism reporting. Locations are reported in latitude and longitude points (decimal degree format).
 
 "iNaturalist is a global community of naturalists, scientists, and members of the public sharing over a million wildlife sightings to teach one another about the natural world while creating high-quality citizen science data for science and conservation". [1]
 [iNaturalist API](https://api.inaturalist.org/v1/docs/)
@@ -45,10 +45,10 @@ Value, Category, Count,  Acreage
 
 <pre>
 Column descriptions:
-Value = Identifier for category label
+**Value** = Identifier for category label
 Category = Category Label (see "CrosScape Category Codes" below)
-Count = Count represents a raw pixel count. One pixel corresponds to 30 meters.
-Acreage = The acreage for the category (limited to just acreage within the bounding box supplied) at the time point(year) supplied. 
+**Count**= Count represents a raw pixel count. One pixel corresponds to 30 meters.
+**Acreage** = The acreage for the category (limited to just acreage within the bounding box supplied) at the time point(year) supplied. 
 </pre>
 
 To calculate acreage multiply the count by the square meters conversion factor which is dependent upon the CDL pixel size. The conversion factor for 30 meter pixels is 0.222394. ([see documentation](https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php#Section2_1.0)).
