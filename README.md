@@ -12,7 +12,7 @@ We use locations from citizen science organism reporting. Locations are reported
 
 ### Cropland Data Layer (CDL)
 
-"The geospatial data product called the Cropland Data Layer (CDL) is hosted on CropScape (https://nassgeodata.gmu.edu/CropScape/). The CDL is a raster, geo-referenced, crop-specific land cover data layer created annually for the continental United States using moderate resolution satellite imagery and extensive agricultural ground truth [2]." All historical CDL products are available for use and free for download through [CropScape](https://nassgeodata.gmu.edu/CropScape/devhelp/help.html) [3].
+"The geospatial data product called the Cropland Data Layer (CDL) is hosted on CropScape (https://nassgeodata.gmu.edu/CropScape/). The CDL is a raster, geo-referenced, crop-specific land cover data layer created annually for the continental United States using moderate resolution satellite imagery and extensive agricultural ground truth [2]." All historical CDL products are available for use and free for download through [CropScape](https://nassgeodata.gmu.edu/CropScape/devhelp/help.html).
 
 We are using the web service "GetCDLStat" to supply a csv with the count and acreage of various crop and land use categories.  The inputs we are supplying are year, bounding box, and format which then supplies the a csv file with these data. Bounding boxes use coordinates in the projection of USA Contiguous Albers Equal Area, USGS version [see WSDL](https://nassgeodata.gmu.edu/axis2/services/CDLService?wsdl)
 
@@ -55,18 +55,20 @@ To calculate acreage multiply the count by the square meters conversion factor w
 
 #### Cropscape category codes
 
-We used the category codes and names used in CropScape ["List of CDL codes, class names, and RGB color values"](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/CDL_codes_names_colors.xlsx). We also made an additional set of combined categories of interest.  
+Category codes and names used in CropScape ["List of CDL codes, class names, and RGB color values"](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/CDL_codes_names_colors.xlsx). 
 
-![US_2022_CDL_legend](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/US_2022_CDL_legend.jpg)
+![US_2022_CDL_legend](cropScapeDocumentation/US_2022_CDL_legend.jpg) 
+* Image source: https://www.nass.usda.gov/Research_and_Science/Cropland/docs/US_2022_CDL_legend.jpg
 
-"The AGRICULTURAL CATEGORIES are based on data from the Farm Service Agency (FSA) Common Land Unit (CLU) Program. Thus, all crop specific categories are determined by the FSA CLU/578 Program which offers detailed documentation at the following website: https://www.fsa.usda.gov/programs-and-services/laws-and-regulations/handbooks/index. " [5]
+"The AGRICULTURAL CATEGORIES are based on data from the Farm Service Agency (FSA) Common Land Unit (CLU) Program. Thus, all crop specific categories are determined by the FSA CLU/578 Program which offers detailed documentation at the following website: https://www.fsa.usda.gov/programs-and-services/laws-and-regulations/handbooks/index. " [4]
 
-"As for the NON-AGRICULTURAL CATEGORIES in the CDL, we sample non-ag training and validation from the USGS National Land Cover Database (NLCD). The NLCD legend with category definitions is available at: https://www.mrlc.gov/data/legends/national-land-cover-database-2016-nlcd2016-legend. In the CDL we have added 100 to their code numbers (i.e. NLCD code 11 "Open Water" is code 111 in the CDL). The NLCD Cultivated Crops category is ignored for CDL purposes. We have also made the decision to merge NLCD "Grassland/Herbaceous" and NLCD "Pasture/Hay" into a single CDL category called "Grassland/Pasture" (CDL code 176)." [5]
+"As for the NON-AGRICULTURAL CATEGORIES in the CDL, we sample non-ag training and validation from the USGS National Land Cover Database (NLCD). The NLCD legend with category definitions is available at: https://www.mrlc.gov/data/legends/national-land-cover-database-2016-nlcd2016-legend. In the CDL we have added 100 to their code numbers (i.e. NLCD code 11 "Open Water" is code 111 in the CDL). The NLCD Cultivated Crops category is ignored for CDL purposes. We have also made the decision to merge NLCD "Grassland/Herbaceous" and NLCD "Pasture/Hay" into a single CDL category called "Grassland/Pasture" (CDL code 176)." [4]
 
-Every CropScape category was assigned to one combined category. CDL SubGroup Categories [CDL_subcategories.csv](cropScapeDocumentation/CDL_subcategories.csv).
+#### Combined Category Codes
 
-![image](cropScapeDocumentation/US_2022_CDL_legend.jpg)
+Every CropScape category was assigned to one combined category. "CDL SubGroup Categories" [CDL_subcategories.csv](cropScapeDocumentation/CDL_subcategories.csv). 
 
+TODO: add code definitions
 
 ### References
 
@@ -76,8 +78,4 @@ Every CropScape category was assigned to one combined category. CDL SubGroup Cat
 
 [3] USDA National Agricultural Statistics Service Cropland Data Layer. 2022. Published crop-specific data layer [Online]. USDA-NASS, Washington, DC. Available at https://nassgeodata.gmu.edu/CropScape/. 
 
-[3] Han, Weiguo, Zhengwei Yang, Liping Di, and Richard Mueller. 2012. CropScape: A Web Service Based Application for Exploring and Disseminating US Conterminous Geospatial Cropland Data Products for Decision Support. Computers and Electronics in Agriculture 84 (June): 111–23. https://doi.org/10.1016/j.compag.2012.03.005.
-
-[4] https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php
-
-
+[4] United States Department of Agriculture. USDA. (n.d.). Section 2: CropScape Technical Information. https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php#Section2_1.0
