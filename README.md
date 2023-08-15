@@ -44,7 +44,7 @@ Value, Category, Count,  Acreage
 </pre>
 
 <pre>
-Column information:
+Column descriptions:
 Value = Identifier for category label
 Category = Category Label (see "CrosScape Category Codes" below)
 Count = Count represents a raw pixel count. One pixel corresponds to 30 meters.
