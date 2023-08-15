@@ -63,7 +63,10 @@ We used the category codes and names used in CropScape ["List of CDL codes, clas
 
 "As for the NON-AGRICULTURAL CATEGORIES in the CDL, we sample non-ag training and validation from the USGS National Land Cover Database (NLCD). The NLCD legend with category definitions is available at: https://www.mrlc.gov/data/legends/national-land-cover-database-2016-nlcd2016-legend. In the CDL we have added 100 to their code numbers (i.e. NLCD code 11 "Open Water" is code 111 in the CDL). The NLCD Cultivated Crops category is ignored for CDL purposes. We have also made the decision to merge NLCD "Grassland/Herbaceous" and NLCD "Pasture/Hay" into a single CDL category called "Grassland/Pasture" (CDL code 176)." [5]
 
-Every CropScape category was assigned to one combined category. CDL SubGroup Categories [CDL_subcategories.csv](cropScapeDocumentation/CDL_subcategories.csv)
+Every CropScape category was assigned to one combined category. CDL SubGroup Categories [CDL_subcategories.csv](cropScapeDocumentation/CDL_subcategories.csv).
+
+![image](cropScapeDocumentation/US_2022_CDL_legend.jpg)
+
 
 ### References
 
