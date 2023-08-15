@@ -43,6 +43,16 @@ Value, Category, Count,  Acreage
 195, Herbaceous Wetlands, 5748, 1278.3
 </pre>
 
+Column information:
+Value = Identifier for category label
+Category = Category Label (see "CrosScape Category Codes" below)
+Count = Count represents a raw pixel count. One pixel corresponds to 30 meters.
+Acreage = The acreage (within the bounding box supplied) at the time point(year) supplied. 
+
+To calculate acreage multiply the count by the square meters conversion factor which is dependent upon the CDL pixel size. The conversion factor for 30 meter pixels is 0.222394. ([see documentation](https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php#Section2_1.0)).
+
+
+
 #### Cropscape category codes
 
 We used the category codes and names used in CropScape ["List of CDL codes, class names, and RGB color values"](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/CDL_codes_names_colors.xlsx) by reducing the full set of provided categories into select categories of interest and groups of combined categories.
