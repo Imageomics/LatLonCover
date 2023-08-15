@@ -1,8 +1,6 @@
 # LatLonCover
 Land usage descriptions for neighborhoods around given lat/long
 
-## Documentation
-
 ## Data Sources
 
 ### iNaturalist
