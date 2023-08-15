@@ -46,7 +46,7 @@ Value, Category, Count,  Acreage
 <pre>
 Column descriptions:
 Value = Identifier for category label
-Category = Category Label (see "CrosScape Category Codes" below)
+Category = Category Label (see "CrosScape Category Codes" below). Note that category labels are note unique (e.g. Two "Barren" categories with ids 65 and 131).
 Count= Count represents a raw pixel count. One pixel corresponds to 30 meters.
 Acreage = The acreage for the category (limited to just acreage within the bounding box supplied) at the time point(year) supplied. 
 </pre>
