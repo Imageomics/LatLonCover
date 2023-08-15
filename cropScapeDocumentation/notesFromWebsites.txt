@@ -1,0 +1,35 @@
+This is a text file that includes notes from Leanna found via the following notes. 
+
+*** main: https://nassgeodata.gmu.edu/CropScape/
+
+*** Via the "?" Navigated to
+
+https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php
+
+*** Where there are links to legends and other important details.
+
+** E.g., color legend for 2022
+https://www.nass.usda.gov/Research_and_Science/Cropland/docs/US_2022_CDL_legend.jpg
+
+This jpg is stored in the repo.
+
+**E.g., national and by State excel file of the difference classications for crop data layer (CDL) .
+
+https://www.nass.usda.gov/Research_and_Science/Cropland/docs/2022_CDL_Histogram_Summary.xlsx
+
+This excel file is also in stored in the repo.
+
+** Finally, this is a similar excel file that includes the comprehensive list of classifications
+ https://www.nass.usda.gov/Research_and_Science/Cropland/docs/CDL_codes_names_colors.xlsx
+
+
+*** Leanna  created condensed csv that includes comprehensive list of classifications and sub-categories to report proportions.
+
+This file is called CDL_subCategories.csv 
+
+
+
+*** Data Dictionaries
+National Land Cover Database Class Legend
+https://www.mrlc.gov/data/legends/national-land-cover-database-class-legend-and-description
+https://www.mrlc.gov/sites/default/files/NLCDclasses.pdf
