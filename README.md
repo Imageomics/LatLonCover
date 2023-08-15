@@ -68,7 +68,7 @@ CDL category definitions:
 
 #### Combined Category Codes
 
-Every CropScape category was assigned to one combined category. "CDL SubGroup Categories" [CDL_subcategories.csv](cropScapeDocumentation/CDL_subcategories.csv).  
+Every CropScape category was assigned to one combined "fineClass" and "courseClass" category. "CDL SubGroup Categories" [CDL_subcategories.csv](cropScapeDocumentation/CDL_subcategories.csv).  
 Column descriptions:
 * Codes = The CDL category identifier
 * Class_Names = CDL category name
