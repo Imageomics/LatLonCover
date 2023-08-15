@@ -7,7 +7,7 @@ Land usage descriptions for neighborhoods around given lat/long
 
 ### iNaturalist
 
-We use locations from citizen science organisms reporting.
+We use locations from citizen science organism reporting.
 
 "iNaturalist is a global community of naturalists, scientists, and members of the public sharing over a million wildlife sightings to teach one another about the natural world while creating high-quality citizen science data for science and conservation" [1].
 [iNaturalist API](https://api.inaturalist.org/v1/docs/)
