@@ -20,6 +20,12 @@ We use locations from citizen science organism reporting.
 
 We used the category codes and names used in CropScape ["List of CDL codes, class names, and RGB color values"](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/CDL_codes_names_colors.xlsx) by reducing the full set of provided categories into select categories of interest and groups of combined categories.
 
+#### Data Definitions 
+
+From CropScape's [Web Services Description Language (WSDL)](https://nassgeodata.gmu.edu/axis2/services/CDLService?wsdl)
+
+
+
 ### References
 
 [1] iNatualist API.(n.d.). https://api.inaturalist.org/v1/docs/ 
