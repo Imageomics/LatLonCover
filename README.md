@@ -16,9 +16,7 @@ We use locations from citizen science organism reporting.
 
 "The geospatial data product called the Cropland Data Layer (CDL) is hosted on CropScape (https://nassgeodata.gmu.edu/CropScape/). The CDL is a raster, geo-referenced, crop-specific land cover data layer created annually for the continental United States using moderate resolution satellite imagery and extensive agricultural ground truth [2]." All historical CDL products are available for use and free for download through [CropScape](https://nassgeodata.gmu.edu/CropScape/devhelp/help.html).
 
-We are using the web service "GetCDLStat" to supply a csv with count and acrage of various crop and land use categories.  The inputs we are supplying are year, bounding box, and format which then supplies the a csv file with these data.
-
-* bounding box uses coordinates in the projection of USA Contiguous Albers Equal Area,USGS version [see WSDL](https://nassgeodata.gmu.edu/axis2/services/CDLService?wsdl)
+We are using the web service "GetCDLStat" to supply a csv with count and acrage of various crop and land use categories.  The inputs we are supplying are year, bounding box, and format which then supplies the a csv file with these data. Bounding boxes use coordinates in the projection of USA Contiguous Albers Equal Area,USGS version [see WSDL](https://nassgeodata.gmu.edu/axis2/services/CDLService?wsdl)
 
 Example:
 * `https://nassgeodata.gmu.edu/axis2/services/CDLService/GetCDLStat?year=2018&bbox=130783,2203171,153923,2217961&format=csv`
