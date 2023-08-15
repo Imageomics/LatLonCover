@@ -55,7 +55,9 @@ To calculate acreage multiply the count by the square meters conversion factor w
 
 #### Cropscape category codes
 
-We used the category codes and names used in CropScape ["List of CDL codes, class names, and RGB color values"](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/CDL_codes_names_colors.xlsx) by reducing the full set of provided categories into select categories of interest and groups of combined categories.
+We used the category codes and names used in CropScape ["List of CDL codes, class names, and RGB color values"](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/CDL_codes_names_colors.xlsx). We also made an additional set of combined categories of interest.  Every CropScape category was assinged to one combined category.
+
+TODO: add lookup table for group codes 
 
 ### References
 
