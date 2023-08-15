@@ -16,6 +16,8 @@ We use locations from citizen science organism reporting.
 
 "The geospatial data product called the Cropland Data Layer (CDL) is hosted on CropScape (https://nassgeodata.gmu.edu/CropScape/). The CDL is a raster, geo-referenced, crop-specific land cover data layer created annually for the continental United States using moderate resolution satellite imagery and extensive agricultural ground truth [2]." All historical CDL products are available for use and free for download through [CropScape](https://nassgeodata.gmu.edu/CropScape/devhelp/help.html).
 
+CropScape's [Web Services Description Language (WSDL)](https://nassgeodata.gmu.edu/axis2/services/CDLService?wsdl) 
+
 #### Cropscape category codes
 
 We used the category codes and names used in CropScape ["List of CDL codes, class names, and RGB color values"](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/CDL_codes_names_colors.xlsx) by reducing the full set of provided categories into select categories of interest and groups of combined categories.
