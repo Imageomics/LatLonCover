@@ -9,16 +9,13 @@ Land usage descriptions for neighborhoods around given lat/long
 
 We use locations from citizen science organisms reporting.
 
-iNaturalist is a global community of naturalists, scientists, and members of the public sharing over a million wildlife sightings to teach one another about the natural world while creating high-quality citizen science data for science and conservation [1].
+"iNaturalist is a global community of naturalists, scientists, and members of the public sharing over a million wildlife sightings to teach one another about the natural world while creating high-quality citizen science data for science and conservation" [1](https://api.inaturalist.org/v1/docs/ ).
 [iNaturalist API](https://api.inaturalist.org/v1/docs/)
 
 ### Cropland Data Layer (CDL)
 
-CroplandCROS (https://croplandcros.scinet.usda.gov/), the geospatial data product hosts the Cropland Data Layer (CDL).
+The geospatial data product called the Cropland Data Layer (CDL) is hosted on CropScape (https://nassgeodata.gmu.edu/CropScape/). The CDL is a raster, geo-referenced, crop-specific land cover data layer created annually for the continental United States using moderate resolution satellite imagery and extensive agricultural ground truth. All historical CDL products are available for use and free for download through [CropScape](https://nassgeodata.gmu.edu/CropScape/devhelp/help.html) [2].
 
-The [Cropland Data Layer (CDL)](https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php) is a data product produced by the National Agricultural Statistics Service of U.S. Department of Agriculture. It provides geo-referenced, high accuracy, 30 or 56 meter resolution, crop-specific cropland land cover information for up to 48 contiguous states in the U.S. from 1997 to the present. This data product has been extensively used in agricultural research [1].
-
-CropScape is an interactive Web CDL exploring system, and it was developed to query, visualize, disseminate, and analyze CDL data geospatially through standard geospatial Web services in a publicly accessible online environment[2]. The development of the CropScapeR package is to allow R users to easily utilize the geospatial processing services provided by CropScape, so that they can effectively and efficiently access and analyze the CDL data.
 
 ### References
 
