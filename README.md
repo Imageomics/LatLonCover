@@ -55,7 +55,7 @@ To calculate acreage multiply the count by the square meters conversion factor w
 
 #### Cropscape category codes
 
-We used the category codes and names used in CropScape ["List of CDL codes, class names, and RGB color values"](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/CDL_codes_names_colors.xlsx). We also made an additional set of combined categories of interest.  Every CropScape category was assinged to one combined category.
+We used the category codes and names used in CropScape ["List of CDL codes, class names, and RGB color values"](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/CDL_codes_names_colors.xlsx). We also made an additional set of combined categories of interest.  
 
 ![US_2022_CDL_legend](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/US_2022_CDL_legend.jpg)
 
@@ -63,7 +63,7 @@ We used the category codes and names used in CropScape ["List of CDL codes, clas
 
 "As for the NON-AGRICULTURAL CATEGORIES in the CDL, we sample non-ag training and validation from the USGS National Land Cover Database (NLCD). The NLCD legend with category definitions is available at: https://www.mrlc.gov/data/legends/national-land-cover-database-2016-nlcd2016-legend. In the CDL we have added 100 to their code numbers (i.e. NLCD code 11 "Open Water" is code 111 in the CDL). The NLCD Cultivated Crops category is ignored for CDL purposes. We have also made the decision to merge NLCD "Grassland/Herbaceous" and NLCD "Pasture/Hay" into a single CDL category called "Grassland/Pasture" (CDL code 176)." [5]
 
-TODO: add lookup table for group codes 
+Every CropScape category was assigned to one combined category. CDL SubGroup Categories [CDL_subcategories.csv](cropScapeDocumentation/CDL_subcategories.csv)
 
 ### References
 
