@@ -74,10 +74,6 @@ Column descriptions:
 * Class_Names = CDL category name
 * courseClass = Code for group of CDL categories focused on grouping into 7 course scale categories. For example all crops were grouped into "A" indicating Agriculture. [Course subcategory code definitions](cropScapeDocumentation/CDL_subcategories_legendCrse.csv)
 * fineClass = Code for group of CDL categories focused on grouping into 18 fine scale categories. For example, forest course category was broken into finer classes such as "FD" Forest Deciduous and "FE" Forest Evergreen. [Fine subcategory code definitions](cropScapeDocumentation/CDL_subcategories_legendFine.csv)
-This file includes the full CDL category list with additional columns 
-
-[Course subcategory code definitions](cropScapeDocumentation/CDL_subcategories_legendCrse.csv)
-
 
 
 ### References
