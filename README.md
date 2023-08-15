@@ -48,7 +48,7 @@ Column descriptions:
 Value = Identifier for category label
 Category = Category Label (see "CrosScape Category Codes" below)
 Count = Count represents a raw pixel count. One pixel corresponds to 30 meters.
-Acreage = The acreage (within the bounding box supplied) at the time point(year) supplied. 
+Acreage = The acreage for the category (limited to just acreage within the bounding box supplied) at the time point(year) supplied. 
 </pre>
 
 To calculate acreage multiply the count by the square meters conversion factor which is dependent upon the CDL pixel size. The conversion factor for 30 meter pixels is 0.222394. ([see documentation](https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php#Section2_1.0)).
