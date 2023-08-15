@@ -51,14 +51,16 @@ Count= Count represents a raw pixel count. One pixel corresponds to 30 meters.
 Acreage = The acreage for the category (limited to just acreage within the bounding box supplied) at the time point(year) supplied. 
 </pre>
 
-To calculate acreage multiply the count by the square meters conversion factor which is dependent upon the CDL pixel size. The conversion factor for 30 meter pixels is 0.222394. ([see documentation](https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php#Section2_1.0)).
+"To calculate acreage multiply the count by the square meters conversion factor which is dependent upon the CDL pixel size. The conversion factor for 30 meter pixels is 0.222394."  ([see documentation](https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php#Section2_1.0)).
 
-#### Cropscape category codes
+#### Cropscape CDL category codes
 
 Category codes and names used in CropScape ["List of CDL codes, class names, and RGB color values"](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/CDL_codes_names_colors.xlsx). 
 
 ![US_2022_CDL_legend](cropScapeDocumentation/US_2022_CDL_legend.jpg) 
 * Image source: https://www.nass.usda.gov/Research_and_Science/Cropland/docs/US_2022_CDL_legend.jpg
+
+CDL category definitions: 
 
 "The AGRICULTURAL CATEGORIES are based on data from the Farm Service Agency (FSA) Common Land Unit (CLU) Program. Thus, all crop specific categories are determined by the FSA CLU/578 Program which offers detailed documentation at the following website: https://www.fsa.usda.gov/programs-and-services/laws-and-regulations/handbooks/index. " [4]
 
