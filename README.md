@@ -57,6 +57,8 @@ To calculate acreage multiply the count by the square meters conversion factor w
 
 We used the category codes and names used in CropScape ["List of CDL codes, class names, and RGB color values"](https://www.nass.usda.gov/Research_and_Science/Cropland/docs/CDL_codes_names_colors.xlsx). We also made an additional set of combined categories of interest.  Every CropScape category was assinged to one combined category.
 
+"The AGRICULTURAL CATEGORIES are based on data from the Farm Service Agency (FSA) Common Land Unit (CLU) Program. Thus, all crop specific categories are determined by the FSA CLU/578 Program which offers detailed documentation at the following website: https://www.fsa.usda.gov/programs-and-services/laws-and-regulations/handbooks/index. " [4]
+
 TODO: add lookup table for group codes 
 
 ### References
@@ -66,3 +68,5 @@ TODO: add lookup table for group codes
 [2] Boryan, Claire, Zhengwei Yang, Rick Mueller, and Mike Craig. 2011. Monitoring US Agriculture: The US Department of Agriculture, National Agricultural Statistics Service, Cropland Data Layer Program. Geocarto International 26 (5): 341–58. https://doi.org/10.1080/10106049.2011.562309.
 
 [3] Han, Weiguo, Zhengwei Yang, Liping Di, and Richard Mueller. 2012. CropScape: A Web Service Based Application for Exploring and Disseminating US Conterminous Geospatial Cropland Data Products for Decision Support. Computers and Electronics in Agriculture 84 (June): 111–23. https://doi.org/10.1016/j.compag.2012.03.005.
+
+[4] https://www.nass.usda.gov/Research_and_Science/Cropland/sarsfaqs2.php
