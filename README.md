@@ -18,6 +18,8 @@ We use locations from citizen science organism reporting.
 
 We are using the web service "GetCDLStat" to supply a csv with count and acrage of various crop and land use categories.  The inputs we are supplying are year, bounding box, and format which then supplies the a csv file with these data.
 
+* bounding box uses coordinates in the projection of USA Contiguous Albers Equal Area,USGS version [see WSDL](https://nassgeodata.gmu.edu/axis2/services/CDLService?wsdl)
+
 Example:
 * `https://nassgeodata.gmu.edu/axis2/services/CDLService/GetCDLStat?year=2018&bbox=130783,2203171,153923,2217961&format=csv`
 * supplies csv: `https://nassgeodata.gmu.edu/webservice/nass_data_cache/CDL_2018_clip_20230815110236_390867377.csv`
