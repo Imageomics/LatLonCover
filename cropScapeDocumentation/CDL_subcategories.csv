@@ -1,257 +1,257 @@
-﻿Codes,Class_Names,courseClass,fineClass,,,,,,,,,
-0,Background,N,N,,,,,,,,,
-1,Corn,A,A,,,,,,,,,
-2,Cotton,A,A,,,,,,,,,
-3,Rice,A,A,,,,,,,,,
-4,Sorghum,A,A,,,,,,,,,
-5,Soybeans,A,A,,,,,,,,,
-6,Sunflower,A,A,,,,,,,,,
-7, ,N ,N ,,,,,,,,,
-8, ,N ,N ,,,,,,,,,
-9, ,N ,N ,,,,,,,,,
-10,Peanuts,A,A,,,,,,,,,
-11,Tobacco,A,A,,,,,,,,,
-12,Sweet Corn,A,A,,,,,,,,,
-13,Pop or Orn Corn,A,A,,,,,,,,,
-14,Mint,A,A,,,,,,,,,
-15, ,N ,N ,,,,,,,,,
-16, ,N ,N ,,,,,,,,,
-17, ,N ,N ,,,,,,,,,
-18, ,N ,N ,,,,,,,,,
-19, ,N ,N ,,,,,,,,,
-20, ,N ,N ,,,,,,,,,
-21,Barley,A,A,,,,,,,,,
-22,Durum Wheat,A,A,,,,,,,,,
-23,Spring Wheat,A,A,,,,,,,,,
-24,Winter Wheat,A,A,,,,,,,,,
-25,Other Small Grains,A,A,,,,,,,,,
-26,Dbl Crop WinWht/Soybeans,A,AD,,,,,,,,,
-27,Rye,A,A,,,,,,,,,
-28,Oats,A,A,,,,,,,,,
-29,Millet,A,A,,,,,,,,,
-30,Speltz,A,A,,,,,,,,,
-31,Canola,A,A,,,,,,,,,
-32,Flaxseed,A,A,,,,,,,,,
-33,Safflower,A,A,,,,,,,,,
-34,Rape Seed,A,A,,,,,,,,,
-35,Mustard,A,A,,,,,,,,,
-36,Alfalfa,A,A,,,,,,,,,
-37,Other Hay/Non Alfalfa,A,A,,,,,,,,,
-38,Camelina,A,A,,,,,,,,,
-39,Buckwheat,A,A,,,,,,,,,
-40, ,N,N,,,,,,,,,
-41,Sugarbeets,A,A,,,,,,,,,
-42,Dry Beans,A,A,,,,,,,,,
-43,Potatoes,A,A,,,,,,,,,
-44,Other Crops,A,A,,,,,,,,,
-45,Sugarcane,A,A,,,,,,,,,
-46,Sweet Potatoes,A,A,,,,,,,,,
-47,Misc Vegs & Fruits,A,A,,,,,,,,,
-48,Watermelons,A,A,,,,,,,,,
-49,Onions,A,A,,,,,,,,,
-50,Cucumbers,A,A,,,,,,,,,
-51,Chick Peas,A,A,,,,,,,,,
-52,Lentils,A,A,,,,,,,,,
-53,Peas,A,A,,,,,,,,,
-54,Tomatoes,A,A,,,,,,,,,
-55,Caneberries,A,A,,,,,,,,,
-56,Hops,A,A,,,,,,,,,
-57,Herbs,A,A,,,,,,,,,
-58,Clover/Wildflowers,A,A,,,,,,,,,
-59,Sod/Grass Seed,A,A,,,,,,,,,
-60,Switchgrass,A,A,,,,,,,,,
-61,Fallow/Idle Cropland,A,AI,,,,,,,,,
-62, ,N,N,,,,,,,,,
-63,Forest,F,F,,,,,,,,,
-64,Shrubland,F,FS,,,,,,,,,
-65,Barren,B,B,,,,,,,,,
-66,Cherries,A ,A ,,,,,,,,,
-67,Peaches,A ,A ,,,,,,,,,
-68,Apples,A ,A ,,,,,,,,,
-69,Grapes,A ,A ,,,,,,,,,
-70,Christmas Trees,F,FE,,,,,,,,,
-71,Other Tree Crops,F,F,,,,,,,,,
-72,Citrus,A ,A ,,,,,,,,,
-73, ,N ,N ,,,,,,,,,
-74,Pecans,A ,A ,,,,,,,,,
-75,Almonds,A,A,,,,,,,,,
-76,Walnuts,A,A,,,,,,,,,
-77,Pears,A,A,,,,,,,,,
-78, ,N ,N ,,,,,,,,,
-79, ,N ,N ,,,,,,,,,
-80, ,N ,N ,,,,,,,,,
-81,Clouds/No Data,N ,N ,,,,,,,,,
-82,Developed,D,D,,,,,,,,,
-83,Water,W,W,,,,,,,,,
-84, ,N,N,,,,,,,,,
-85, ,N,N,,,,,,,,,
-86, ,N,N,,,,,,,,,
-87,Wetlands,W,WL,,,,,,,,,
-88,Nonag/Undefined,N,N,,,,,,,,,
-89, ,N,N,,,,,,,,,
-90, ,N,N,,,,,,,,,
-91, ,N,N,,,,,,,,,
-92,Aquaculture,W ,W ,,,,,,,,,
-93, ,N ,N ,,,,,,,,,
-94, ,N ,N ,,,,,,,,,
-95, ,N ,N ,,,,,,,,,
-96, ,N ,N ,,,,,,,,,
-97, ,N ,N ,,,,,,,,,
-98, ,N ,N ,,,,,,,,,
-99, ,N ,N ,,,,,,,,,
-100, ,N ,N ,,,,,,,,,
-101, ,N ,N ,,,,,,,,,
-102, ,N ,N ,,,,,,,,,
-103, ,N ,N ,,,,,,,,,
-104, ,N ,N ,,,,,,,,,
-105, ,N ,N ,,,,,,,,,
-106, ,N ,N ,,,,,,,,,
-107, ,N ,N ,,,,,,,,,
-108, ,N ,N ,,,,,,,,,
-109, ,N ,N ,,,,,,,,,
-110, ,N ,N ,,,,,,,,,
-111,Open Water,W,W,,,,,,,,,
-112,Perennial Ice/Snow ,W,WI,,,,,,,,,
-113, ,N,N,,,,,,,,,
-114, ,N,N,,,,,,,,,
-115, ,N,N,,,,,,,,,
-116, ,N,N,,,,,,,,,
-117, ,N,N,,,,,,,,,
-118, ,N,N,,,,,,,,,
-119, ,N,N,,,,,,,,,
-120, ,N,N,,,,,,,,,
-121,Developed/Open Space,D,DR,,,,,,,,,
-122,Developed/Low Intensity,D,DS,,,,,,,,,
-123,Developed/Med Intensity,D,DS,,,,,,,,,
-124,Developed/High Intensity,D,DH,,,,,,,,,
-125, ,N,N,,,,,,,,,
-126, ,N,N,,,,,,,,,
-127, ,N,N,,,,,,,,,
-128, ,N,N,,,,,,,,,
-129, ,N,N,,,,,,,,,
-130, ,N,N,,,,,,,,,
-131,Barren,B,B,,,,,,,,,
-132, ,N,N,,,,,,,,,
-133, ,N,N,,,,,,,,,
-134, ,N,N,,,,,,,,,
-135, ,N,N,,,,,,,,,
-136, ,N,N,,,,,,,,,
-137, ,N,N,,,,,,,,,
-138, ,N,N,,,,,,,,,
-139, ,N,N,,,,,,,,,
-140, ,N,N,,,,,,,,,
-141,Deciduous Forest,F,FD,,,,,,,,,
-142,Evergreen Forest,F,FE,,,,,,,,,
-143,Mixed Forest,F,F,,,,,,,,,
-144, ,N,N,,,,,,,,,
-145, ,N,N,,,,,,,,,
-146, ,N,N,,,,,,,,,
-147, ,N,N,,,,,,,,,
-148, ,N,N,,,,,,,,,
-149, ,N,N,,,,,,,,,
-150, ,N,N,,,,,,,,,
-151, ,N,N,,,,,,,,,
-152,Shrubland,F,FS,,,,,,,,,
-153, ,N,N,,,,,,,,,
-154, ,N,N,,,,,,,,,
-155, ,N,N,,,,,,,,,
-156, ,N,N,,,,,,,,,
-157, ,N,N,,,,,,,,,
-158, ,N,N,,,,,,,,,
-159, ,N,N,,,,,,,,,
-160, ,N,N,,,,,,,,,
-161, ,N,N,,,,,,,,,
-162, ,N,N,,,,,,,,,
-163, ,N,N,,,,,,,,,
-164, ,N,N,,,,,,,,,
-165, ,N,N,,,,,,,,,
-166, ,N,N,,,,,,,,,
-167, ,N,N,,,,,,,,,
-168, ,N,N,,,,,,,,,
-169, ,N,N,,,,,,,,,
-170, ,N,N,,,,,,,,,
-171, ,N,N,,,,,,,,,
-172, ,N,N,,,,,,,,,
-173, ,N,N,,,,,,,,,
-174, ,N,N,,,,,,,,,
-175, ,N,N,,,,,,,,,
-176,Grass/Pasture,G,G,,,,,,,,,
-177, ,N,N,,,,,,,,,
-178, ,N,N,,,,,,,,,
-179, ,N,N,,,,,,,,,
-180, ,N,N,,,,,,,,,
-181, ,N,N,,,,,,,,,
-182, ,N,N,,,,,,,,,
-183, ,N,N,,,,,,,,,
-184, ,N,N,,,,,,,,,
-185, ,N,N,,,,,,,,,
-186, ,N,N,,,,,,,,,
-187, ,N,N,,,,,,,,,
-188, ,N,N,,,,,,,,,
-189, ,N,N,,,,,,,,,
-190,Woody Wetlands,W ,WLW,,,,,,,,,
-191, ,N,N,,,,,,,,,
-192, ,N,N,,,,,,,,,
-193, ,N,N,,,,,,,,,
-194, ,N,N,,,,,,,,,
-195,Herbaceous Wetlands,W ,WLH,,,,,,,,,
-196, ,N,N,,,,,,,,,
-197, ,N,N,,,,,,,,,
-198, ,N,N,,,,,,,,,
-199, ,N,N,,,,,,,,,
-200, ,N,N,,,,,,,,,
-201, ,N,N,,,,,,,,,
-202, ,N,N,,,,,,,,,
-203, ,N,N,,,,,,,,,
-204,Pistachios,A,A,,,,,,,,,
-205,Triticale,A,A,,,,,,,,,
-206,Carrots,A,A,,,,,,,,,
-207,Asparagus,A,A,,,,,,,,,
-208,Garlic,A,A,,,,,,,,,
-209,Cantaloupes,A,A,,,,,,,,,
-210,Prunes,A,A,,,,,,,,,
-211,Olives,A,A,,,,,,,,,
-212,Oranges,A,A,,,,,,,,,
-213,Honeydew Melons,A,A,,,,,,,,,
-214,Broccoli,A,A,,,,,,,,,
-215,Avocados,A,A,,,,,,,,,
-216,Peppers,A,A,,,,,,,,,
-217,Pomegranates,A,A,,,,,,,,,
-218,Nectarines,A,A,,,,,,,,,
-219,Greens,A,A,,,,,,,,,
-220,Plums,A,A,,,,,,,,,
-221,Strawberries,A,A,,,,,,,,,
-222,Squash,A,A,,,,,,,,,
-223,Apricots,A,A,,,,,,,,,
-224,Vetch,A,A,,,,,,,,,
-225,Dbl Crop WinWht/Corn,A,AD,,,,,,,,,
-226,Dbl Crop Oats/Corn,A,AD,,,,,,,,,
-227,Lettuce,A,A,,,,,,,,,
-228,Dbl Crop Triticale/Corn,A,AD,,,,,,,,,
-229,Pumpkins,A,A,,,,,,,,,
-230,Dbl Crop Lettuce/Durum Wht,A,AD,,,,,,,,,
-231,Dbl Crop Lettuce/Cantaloupe,A,AD,,,,,,,,,
-232,Dbl Crop Lettuce/Cotton,A,AD,,,,,,,,,
-233,Dbl Crop Lettuce/Barley,A,AD,,,,,,,,,
-234,Dbl Crop Durum Wht/Sorghum,A,AD,,,,,,,,,
-235,Dbl Crop Barley/Sorghum,A,AD,,,,,,,,,
-236,Dbl Crop WinWht/Sorghum,A,AD,,,,,,,,,
-237,Dbl Crop Barley/Corn,A,AD,,,,,,,,,
-238,Dbl Crop WinWht/Cotton,A,AD,,,,,,,,,
-239,Dbl Crop Soybeans/Cotton,A,AD,,,,,,,,,
-240,Dbl Crop Soybeans/Oats,A,AD,,,,,,,,,
-241,Dbl Crop Corn/Soybeans,A,AD,,,,,,,,,
-242,Blueberries,A,A,,,,,,,,,
-243,Cabbage,A,A,,,,,,,,,
-244,Cauliflower,A,A,,,,,,,,,
-245,Celery,A,A,,,,,,,,,
-246,Radishes,A,A,,,,,,,,,
-247,Turnips,A,A,,,,,,,,,
-248,Eggplants,A,A,,,,,,,,,
-249,Gourds,A,A,,,,,,,,,
-250,Cranberries,A,A,,,,,,,,,
-251, ,N,N,,,,,,,,,
-252, ,N,N,,,,,,,,,
-253, ,N,N,,,,,,,,,
-254,Dbl Crop Barley/Soybeans,A,AD,,,,,,,,,
-255, ,N,N,,,,,,,,,
+Codes Class_Names courseClass fineClass
+0 Background N N
+1 Corn A A
+2 Cotton A A
+3 Rice A A
+4 Sorghum A A
+5 Soybeans A A
+6 Sunflower A A
+7   N N
+8   N N
+9   N N
+10 Peanuts A A
+11 Tobacco A A
+12 Sweet Corn A A
+13 Pop or Orn Corn A A
+14 Mint A A
+15   N N
+16   N N
+17   N N
+18   N N
+19   N N
+20   N N
+21 Barley A A
+22 Durum Wheat A A
+23 Spring Wheat A A
+24 Winter Wheat A A
+25 Other Small Grains A A
+26 Dbl Crop WinWht/Soybeans A AD
+27 Rye A A
+28 Oats A A
+29 Millet A A
+30 Speltz A A
+31 Canola A A
+32 Flaxseed A A
+33 Safflower A A
+34 Rape Seed A A
+35 Mustard A A
+36 Alfalfa A A
+37 Other Hay/Non Alfalfa A A
+38 Camelina A A
+39 Buckwheat A A
+40   N N
+41 Sugarbeets A A
+42 Dry Beans A A
+43 Potatoes A A
+44 Other Crops A A
+45 Sugarcane A A
+46 Sweet Potatoes A A
+47 Misc Vegs & Fruits A A
+48 Watermelons A A
+49 Onions A A
+50 Cucumbers A A
+51 Chick Peas A A
+52 Lentils A A
+53 Peas A A
+54 Tomatoes A A
+55 Caneberries A A
+56 Hops A A
+57 Herbs A A
+58 Clover/Wildflowers A A
+59 Sod/Grass Seed A A
+60 Switchgrass A A
+61 Fallow/Idle Cropland A AI
+62   N N
+63 Forest F F
+64 Shrubland F FS
+65 Barren B B
+66 Cherries A A
+67 Peaches A A
+68 Apples A A
+69 Grapes A A
+70 Christmas Trees F FE
+71 Other Tree Crops F F
+72 Citrus A A
+73   N N
+74 Pecans A A
+75 Almonds A A
+76 Walnuts A A
+77 Pears A A
+78   N N
+79   N N
+80   N N
+81 Clouds/No Data N N
+82 Developed D D
+83 Water W W
+84   N N
+85   N N
+86   N N
+87 Wetlands WL WL
+88 Nonag/Undefined N N
+89   N N
+90   N N
+91   N N
+92 Aquaculture W W
+93   N N
+94   N N
+95   N N
+96   N N
+97   N N
+98   N N
+99   N N
+100   N N
+101   N N
+102   N N
+103   N N
+104   N N
+105   N N
+106   N N
+107   N N
+108   N N
+109   N N
+110   N N
+111 Open Water W W
+112 Perennial Ice/Snow  W WI
+113   N N
+114   N N
+115   N N
+116   N N
+117   N N
+118   N N
+119   N N
+120   N N
+121 Developed/Open Space D DR
+122 Developed/Low Intensity D DS
+123 Developed/Med Intensity D DS
+124 Developed/High Intensity D DH
+125   N N
+126   N N
+127   N N
+128   N N
+129   N N
+130   N N
+131 Barren B B
+132   N N
+133   N N
+134   N N
+135   N N
+136   N N
+137   N N
+138   N N
+139   N N
+140   N N
+141 Deciduous Forest F FD
+142 Evergreen Forest F FE
+143 Mixed Forest F F
+144   N N
+145   N N
+146   N N
+147   N N
+148   N N
+149   N N
+150   N N
+151   N N
+152 Shrubland F FS
+153   N N
+154   N N
+155   N N
+156   N N
+157   N N
+158   N N
+159   N N
+160   N N
+161   N N
+162   N N
+163   N N
+164   N N
+165   N N
+166   N N
+167   N N
+168   N N
+169   N N
+170   N N
+171   N N
+172   N N
+173   N N
+174   N N
+175   N N
+176 Grass/Pasture G G
+177   N N
+178   N N
+179   N N
+180   N N
+181   N N
+182   N N
+183   N N
+184   N N
+185   N N
+186   N N
+187   N N
+188   N N
+189   N N
+190 Woody Wetlands WL WLW
+191   N N
+192   N N
+193   N N
+194   N N
+195 Herbaceous Wetlands WL WLH
+196   N N
+197   N N
+198   N N
+199   N N
+200   N N
+201   N N
+202   N N
+203   N N
+204 Pistachios A A
+205 Triticale A A
+206 Carrots A A
+207 Asparagus A A
+208 Garlic A A
+209 Cantaloupes A A
+210 Prunes A A
+211 Olives A A
+212 Oranges A A
+213 Honeydew Melons A A
+214 Broccoli A A
+215 Avocados A A
+216 Peppers A A
+217 Pomegranates A A
+218 Nectarines A A
+219 Greens A A
+220 Plums A A
+221 Strawberries A A
+222 Squash A A
+223 Apricots A A
+224 Vetch A A
+225 Dbl Crop WinWht/Corn A AD
+226 Dbl Crop Oats/Corn A AD
+227 Lettuce A A
+228 Dbl Crop Triticale/Corn A AD
+229 Pumpkins A A
+230 Dbl Crop Lettuce/Durum Wht A AD
+231 Dbl Crop Lettuce/Cantaloupe A AD
+232 Dbl Crop Lettuce/Cotton A AD
+233 Dbl Crop Lettuce/Barley A AD
+234 Dbl Crop Durum Wht/Sorghum A AD
+235 Dbl Crop Barley/Sorghum A AD
+236 Dbl Crop WinWht/Sorghum A AD
+237 Dbl Crop Barley/Corn A AD
+238 Dbl Crop WinWht/Cotton A AD
+239 Dbl Crop Soybeans/Cotton A AD
+240 Dbl Crop Soybeans/Oats A AD
+241 Dbl Crop Corn/Soybeans A AD
+242 Blueberries A A
+243 Cabbage A A
+244 Cauliflower A A
+245 Celery A A
+246 Radishes A A
+247 Turnips A A
+248 Eggplants A A
+249 Gourds A A
+250 Cranberries A A
+251   N N
+252   N N
+253   N N
+254 Dbl Crop Barley/Soybeans A AD
+255   N N
