@@ -161,3 +161,4 @@ cython_debug/
 
 # Leanna's computer has this file to ignore
 .DS_Store
+.Rhistory

@@ -1,5 +1,4 @@
-#double check classifications
-#strip white space
+#double check classifications and strip white space
 setwd("~/Documents/research/imageomics/quest/latLonCover/LatLonCover/cropScapeDocumentation")
 
 
