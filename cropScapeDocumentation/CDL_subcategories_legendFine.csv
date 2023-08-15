@@ -1,19 +1,19 @@
-Class Definition
-A Agriculture
-AD Agriculture- Double Cropped
-AI Agriculture - Idle Crop
-B Barren
-D Developed without a category
-DR Developed Rural (open)
-DS Developed Suburban (Low and Med Int)
-DU Developed Urban (high Intensity)
-F Forest/Other Tree Crop/Forest Mixed/unclassified
-FD Forest Deciduous
-FE Forest evergreen/ Christmas tree farm
-FS Forest-Shrubland
-N Not Available/Ignore/Cloud Covered/Missing
-W Water/Aquaculture
-WI Perennial Ice / Snow
-WL Wetland
-WLH Wetlands Herb
-WLW Wetlands Woody
+Class,Definition
+A,Agriculture
+AD,Agriculture- Double Cropped
+AI,Agriculture - Idle Crop
+B,Barren
+D,Developed without a category
+DR,Developed Rural (open)
+DS,Developed Suburban (Low and Med Int)
+DU,Developed Urban (high Intensity)
+F,Forest/Other Tree Crop/Forest Mixed/unclassified
+FD,Forest Deciduous
+FE,Forest evergreen/ Christmas tree farm
+FS,Forest-Shrubland
+N,Not Available/Ignore/Cloud Covered/Missing
+W,Water/Aquaculture
+WI,Perennial Ice / Snow
+WL,Wetland
+WLH,Wetlands Herb
+WLW,Wetlands Woody
