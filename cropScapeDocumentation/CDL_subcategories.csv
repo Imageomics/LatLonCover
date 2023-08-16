@@ -58,8 +58,8 @@ Codes,Class_Names,courseClass,fineClass
 56,Hops,A,A
 57,Herbs,A,A
 58,Clover/Wildflowers,A,A
-59,Sod/Grass Seed,A,A
-60,Switchgrass,A,A
+59,Sod/Grass Seed,G,G
+60,Switchgrass,G,G
 61,Fallow/Idle Cropland,A,AI
 62,NA,N,N
 63,Forest,F,F
