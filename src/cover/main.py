@@ -18,7 +18,7 @@ def main(input, output, lat_col, lon_col):
     print("Fetching land coverage data - this may take a few minutes.")
     add_classifications(df, lat_col=lat_col, lon_col=lon_col)
     print(f"Writing {output}.")
-    df.to_csv(output)
+    df.to_csv(output, index=False)
     print("Done")
 
 
