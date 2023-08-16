@@ -1,11 +1,14 @@
 # LatLonCover
-Land usage descriptions for neighborhoods around given lat/long
+This repo creates a function that summarizes land coverage around a location (as defined by one pair of latitude and longitude coordinates)  within the United States.  For example, given location  40.34506167	latitude and -74.72523667 longitude, outcomes from this effort will 1) center a small and large bounding box around the coordinates and 2) use data provided mainly from [CropScape](https://nassgeodata.gmu.edu/CropScape) to report the proportions of areas within the bounding boxes that are designated as Agriculture, Barren, Developed, etc.
+
+The documentation summarizes the data sources used for this repository and concludes with a descripion of function outcomes.
+
 
 ## Data Sources
 
-### iNaturalist
+### iNaturalist (optional)
 
-We use locations from citizen science organism reporting. Locations are reported in latitude and longitude points (decimal degree format).
+Though locations of subjects of intereset can be reported using any software/application, we use locations from the citizen science organism reporting platform called iNaturalist.  Regardless of the applications,  locations need to be reported as latitude and longitude points (decimal degree format).
 
 "iNaturalist is a global community of naturalists, scientists, and members of the public sharing over a million wildlife sightings to teach one another about the natural world while creating high-quality citizen science data for science and conservation". [1]
 [iNaturalist API](https://api.inaturalist.org/v1/docs/)
@@ -67,15 +70,23 @@ CDL category definitions:
 "As for the NON-AGRICULTURAL CATEGORIES in the CDL, we sample non-ag training and validation from the USGS National Land Cover Database (NLCD). The NLCD legend with category definitions is available at: https://www.mrlc.gov/data/legends/national-land-cover-database-2016-nlcd2016-legend. In the CDL we have added 100 to their code numbers (i.e. NLCD code 11 "Open Water" is code 111 in the CDL). The NLCD Cultivated Crops category is ignored for CDL purposes. We have also made the decision to merge NLCD "Grassland/Herbaceous" and NLCD "Pasture/Hay" into a single CDL category called "Grassland/Pasture" (CDL code 176)." [4]
 
 #### Combined Category Codes
-
-Every CropScape category was assigned to one combined "fineClass" and "courseClass" category. "CDL SubGroup Categories" [CDL_subcategories.csv](cropScapeDocumentation/CDL_subcategories.csv).  
+For the purpose of this effort, every CropScape category was assigned to *one* combined "fineClass" and "courseClass" category. "CDL SubGroup Categories" [CDL_subcategories.csv](cropScapeDocumentation/CDL_subcategories.csv).  
 Column descriptions:
 * Codes = The CDL category identifier
 * Class_Names = CDL category name
 * courseClass = Code for group of CDL categories focused on grouping into 7 course scale categories. For example all crops were grouped into "A" indicating Agriculture. [Course subcategory code definitions](cropScapeDocumentation/CDL_subcategories_legendCrse.csv)
 * fineClass = Code for group of CDL categories focused on grouping into 18 fine scale categories. For example, forest course category was broken into finer classes such as "FD" Forest Deciduous and "FE" Forest Evergreen. [Fine subcategory code definitions](cropScapeDocumentation/CDL_subcategories_legendFine.csv)
 
+## Outcomes for this effort
+Outcomes from this repository reports proportions of areas within small and large bounding boxes that are designated as Agriculture, Barren, Developed, etc.
 
+* Refer to [CDL_subcategories.csv](cropScapeDocumentation/CDL_subcategories.csv) to learn exactly how cropscape CDL codes were grouped to create 8 course "subcategories".
+* Refer to  [Course subcategory code definitions](cropScapeDocumentation/CDL_subcategories_legendCrse.csv) to list the 8 groups.
+* Refer to the [Data dictionary](outputDataDictionary.txt) to list the variables created for provided lat-lon locations.  
+
+
+
+	
 ### References
 
 [1] iNatualist API.(n.d.). https://api.inaturalist.org/v1/docs/ 
