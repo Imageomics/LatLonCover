@@ -1,0 +1,38 @@
+This file defines inputs and outputs for the function **cover**.
+
+Inputs:
+* dataframe: csv file that includes rows for observations and columns for variables.  Two of these variables provide the latitude and longitude of the observations.
+* lat_col:  column name for latitude variable in units of degrees.
+* lon_col: column name for longitude variable in units of degrees.
+
+Outputs:
+*dataframe: with columns added to the input data frame.  The following lists the new columns
+
+Added Variables
+* bb_small: coordinates of small bounding box in Albers units; default size of the box is 1/2 mile x 1/2 mile.
+* bb_big: coordinates of bounding box in Albers unitss; default size of the box is 2 mile x 2 mile.
+* A_small: Proportion of area within the small bounding  box that is designated as agriculture.
+* B_small: Proportion of area within the small bounding  box that is designated as barren.
+* D_small: Proportion of area within the small bounding  box that is designated as developed.
+* F_small: Proportion of area within the small bounding  box that is designated as forest.
+* G_small: Proportion of area within the small bounding  box that is designatied designated as grassland.
+* N_small: Proportion of area within the small bounding  box that is not designatied; i.e. missing a designation.
+* W_small: Proportion of area within the small bounding  box that is designatied designated as water.
+* WL_small: Proportion of area within the small bounding  box that is designatied designated as wetland.
+* A_big: Proportion of area within the big bounding  box that is designated as agriculture.
+* B_big: Proportion of area within the big bounding  box that is designated as barren.
+* D_big: Proportion of area within the big bounding  box that is designated as developed.
+* F_big: Proportion of area within the big bounding  box that is designated as forest.
+* G_big: Proportion of area within the big bounding  box that is designatied designated as grassland.
+* N_big: Proportion of area within the big bounding  box that is not designatied; i.e. missing a designation.
+* W_big: Proportion of area within the big bounding  box that is designatied designated as water.
+* WL_big: Proportion of area within the big bounding  box that is designatied designated as wetland.
+
+
+
+
+
+
+
+
+
