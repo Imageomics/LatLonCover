@@ -1,7 +1,7 @@
 # LatLonCover
 This repo creates a function that summarizes land coverage around a location (as defined by one pair of latitude and longitude coordinates)  within the United States.  For example, given location  40.34506167	latitude and -74.72523667 longitude, outcomes from this effort will 1) center a small and large bounding box around the coordinates and 2) use data provided mainly from [CropScape](https://nassgeodata.gmu.edu/CropScape) to report the proportions of areas within the bounding boxes that are designated as Agriculture, Barren, Developed, etc.
 
-The documentation summarizes the data sources used for this repository and concludes with a descripion of function outcomes.
+This documentation summarizes the data sources used for this repository and concludes with a descripion of function outcomes.
 
 
 ## Data Sources
