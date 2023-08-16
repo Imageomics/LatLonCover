@@ -4,19 +4,21 @@ This repo creates a function that summarizes land coverage around a location (as
 This documentation summarizes the data sources used for this repository and concludes with a descripion of function outcomes.
 
 ## Usage
-### Website
-Visit our [HuggingFace Space website](https://huggingface.co/spaces/imageomics/LatLonCover) to enhance a CSV by adding the land coverage categories.
-
-### Command Line Interface
-A command line tool called `cover` is provided that reads an input CSV and create an output CSV with land coverage category columns.
-This requires python to be installed locally.
+The function that summarizes land coverage can be used from multiple ways:
+- Using our [HuggingFace Space website](https://huggingface.co/spaces/imageomics/LatLonCover)
+- Through a command line tool named `cover`
+- Using the function in python code
 
 ### Installation
+To use the command line `cover` tool or the python function requires installing the LatLonCover package.
+This can be done by running the following command:
 ```
 pip install git+https://github.com/Imageomics/LatLonCover.git
 ```
 
-### Usage
+### Command Line Interface
+The `cover` command line tool reads an input CSV and creates an output CSV with land coverage columns.
+
 Read an input CSV file `input.csv` and write an output CSV file `output.csv` where the latitude and longitude columns are `Lat` and `Lon`:
 ```
 cover --lat-col Lat --lon-col Lon input.csv output.csv
@@ -25,6 +27,17 @@ cover --lat-col Lat --lon-col Lon input.csv output.csv
 Help command:
 ```
 cover --help
+```
+
+### Python Usage
+```python
+from pandas import pd
+from cover.classify import add_classifications
+
+df = pd.read_csv("input.csv")
+add_classifications(df, lat_col="Lat", lon_col="Lon")
+df.to_csv(output, index=False)
+
 ```
 
 ## Data Sources
