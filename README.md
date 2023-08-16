@@ -5,9 +5,9 @@ This documentation summarizes the data sources used for this repository and conc
 
 ## Usage
 The function that summarizes land coverage can be used from multiple ways:
-- Using our [HuggingFace Space website](https://huggingface.co/spaces/imageomics/LatLonCover)
-- Through a command line tool named `cover`
-- Using the function in python code
+- [Our Website](https://huggingface.co/spaces/imageomics/LatLonCover)
+- A command line tool named `cover`
+- In python code
 
 ### Installation
 To use the command line `cover` tool or the python function requires installing the LatLonCover package.
@@ -30,13 +30,18 @@ cover --help
 ```
 
 ### Python Usage
+The following python code will 
+1) read an input CSV file named `input.csv`
+2) add new land coverage columns based on the `Lat` and `Lon` columns
+3) save the output CSV to `output.csv`
+   
 ```python
 from pandas import pd
 from cover.classify import add_classifications
 
 df = pd.read_csv("input.csv")
 add_classifications(df, lat_col="Lat", lon_col="Lon")
-df.to_csv(output, index=False)
+df.to_csv("output.csv", index=False)
 
 ```
 
