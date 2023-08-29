@@ -37,10 +37,10 @@ The following python code will
    
 ```python
 from pandas import pd
-from cover.classify import add_classifications
+import cover
 
 df = pd.read_csv("input.csv")
-add_classifications(df, lat_col="Lat", lon_col="Lon")
+df = cover.add_classifications(df, lat_col="Lat", lon_col="Lon")
 df.to_csv("output.csv", index=False)
 
 ```
