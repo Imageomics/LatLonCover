@@ -54,10 +54,14 @@ def get_classification_fraction(df):
 
 
 def get_land_classifications(albers_bounding_box, year):
-    land_cover_csv_str = fetch_land_cover_csv_str(year=year, bbox = albers_bounding_box)
-    df = read_crop_scape_csv(StringIO(land_cover_csv_str))
-    _add_classification_column(df)
-    return get_classification_fraction(df).round(decimals=3).to_dict()
+    if albers_bounding_box:
+        land_cover_csv_str = fetch_land_cover_csv_str(year=year, bbox = albers_bounding_box)
+        df = read_crop_scape_csv(StringIO(land_cover_csv_str))
+        _add_classification_column(df)
+        result = get_classification_fraction(df).round(decimals=3).to_dict()
+        return result
+    else:
+        return {}
 
 
 def classify_row(row, column_name):
@@ -67,6 +71,7 @@ def classify_row(row, column_name):
 def add_classifications(df:pd.DataFrame, lat_col: str, lon_col: str) -> pd.DataFrame:
     """
     Returns a new dataframe with *_big and *_small land coverage columns added to df.
+    Empty lat/lon columns will result in all zeros for the categories.
 
     :param df: dataframe with latitude and longitude columns
     :param lat_col: name of the latitude column in df
