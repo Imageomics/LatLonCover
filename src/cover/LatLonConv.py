@@ -5,6 +5,8 @@ import pandas as pd
 
 
 def format_bounds_str(polygon):
+    if polygon.is_empty:
+        return ''
     x1,y1,x2,y2 = polygon.bounds
     return f"{x1},{y1},{x2},{y2}"
 

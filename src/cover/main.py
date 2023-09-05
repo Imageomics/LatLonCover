@@ -16,9 +16,9 @@ def main(input, output, lat_col, lon_col):
     print(f"Reading {input}.")
     df = pd.read_csv(input)
     print("Fetching land coverage data - this may take a few minutes.")
-    add_classifications(df, lat_col=lat_col, lon_col=lon_col)
+    enhanced_df = add_classifications(df, lat_col=lat_col, lon_col=lon_col)
     print(f"Writing {output}.")
-    df.to_csv(output, index=False)
+    enhanced_df.to_csv(output, index=False)
     print("Done")
 
 

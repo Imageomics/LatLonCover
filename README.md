@@ -29,7 +29,23 @@ Help command:
 cover --help
 ```
 
-### Python Usage
+### Python API
+
+----
+
+__add_classifications__(*df:pd.DataFrame, lat_col: str, lon_col: str*) -> *pd.DataFrame*
+
+> Returns a new dataframe with *_big and *_small land coverage columns added to df.
+    
+Parameters:
+- __df__ - dataframe with latitude and longitude columns
+- __lat_col__ - name of the latitude column in df
+- __lon_col__ - name of the longitude column in df
+
+----
+
+### Python Example
+
 The following python code will 
 1) read an input CSV file named `input.csv`
 2) add new land coverage columns based on the `Lat` and `Lon` columns
@@ -37,10 +53,10 @@ The following python code will
    
 ```python
 from pandas import pd
-from cover.classify import add_classifications
+import cover
 
 df = pd.read_csv("input.csv")
-add_classifications(df, lat_col="Lat", lon_col="Lon")
+df = cover.add_classifications(df, lat_col="Lat", lon_col="Lon")
 df.to_csv("output.csv", index=False)
 
 ```

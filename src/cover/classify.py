@@ -1,5 +1,5 @@
 from io import StringIO
-import pandas
+import pandas as pd
 import requests
 import xml.etree.ElementTree as ET
 from cover.LatLonConv import add_albers_bounding_boxes
@@ -31,14 +31,14 @@ def lookup_classification(name_lookup, crop_scape_value):
 
 
 def read_crop_scape_csv(path):
-    df = pandas.read_csv(path, engine='python', sep=", ")
+    df = pd.read_csv(path, engine='python', sep=", ")
     # Remove spaces from column headers
     df = df.rename(columns=lambda x: x.strip())
     return df
 
 
 def create_name_lookup(path=SUB_CATEGORIES_CSV_URL):
-    crosswalk_df = pandas.read_csv(path, index_col="Codes")
+    crosswalk_df = pd.read_csv(path, index_col="Codes")
     return crosswalk_df["courseClass"]
 
 
@@ -54,23 +54,39 @@ def get_classification_fraction(df):
 
 
 def get_land_classifications(albers_bounding_box, year):
-    land_cover_csv_str = fetch_land_cover_csv_str(year=year, bbox = albers_bounding_box)
-    df = read_crop_scape_csv(StringIO(land_cover_csv_str))
-    _add_classification_column(df)
-    return get_classification_fraction(df).round(decimals=3).to_dict()
+    if albers_bounding_box:
+        land_cover_csv_str = fetch_land_cover_csv_str(year=year, bbox = albers_bounding_box)
+        df = read_crop_scape_csv(StringIO(land_cover_csv_str))
+        _add_classification_column(df)
+        result = get_classification_fraction(df).round(decimals=3).to_dict()
+        return result
+    else:
+        return {}
 
 
 def classify_row(row, column_name):
     return get_land_classifications(row[column_name], year="2022")
 
 
-def add_classifications(df, lat_col, lon_col):
-    add_albers_bounding_boxes(df, lat_column=lat_col, lon_column=lon_col)
+def add_classifications(df:pd.DataFrame, lat_col: str, lon_col: str) -> pd.DataFrame:
+    """
+    Returns a new dataframe with *_big and *_small land coverage columns added to df.
+    Empty lat/lon columns will result in all zeros for the categories.
 
-    classification_ary = df.apply(classify_row, axis=1, column_name='bb_small')
-    for classificationType in CLASSIFICATION_TYPES:
-        df[classificationType + "_small"] = [x.get(classificationType, 0.0) for x in classification_ary]
+    :param df: dataframe with latitude and longitude columns
+    :param lat_col: name of the latitude column in df
+    :param lon_col: name of the longitude column in df
+    """
+    df_enh = df.copy(deep=True)
 
-    classification_ary = df.apply(classify_row, axis=1, column_name='bb_big')
+    add_albers_bounding_boxes(df_enh, lat_column=lat_col, lon_column=lon_col)
+
+    classification_ary = df_enh.apply(classify_row, axis=1, column_name='bb_small')
     for classificationType in CLASSIFICATION_TYPES:
-        df[classificationType + "_big"] = [x.get(classificationType, 0.0) for x in classification_ary]
+        df_enh[classificationType + "_small"] = [x.get(classificationType, 0.0) for x in classification_ary]
+
+    classification_ary = df_enh.apply(classify_row, axis=1, column_name='bb_big')
+    for classificationType in CLASSIFICATION_TYPES:
+        df_enh[classificationType + "_big"] = [x.get(classificationType, 0.0) for x in classification_ary]
+
+    return df_enh
