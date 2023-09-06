@@ -52,11 +52,11 @@ The following python code will
 3) save the output CSV to `output.csv`
    
 ```python
-from pandas import pd
-import cover
+import pandas as pd
+import latloncover
 
 df = pd.read_csv("input.csv")
-df = cover.add_classifications(df, lat_col="Lat", lon_col="Lon")
+df = latloncover.add_classifications(df, lat_col="Lat", lon_col="Lon")
 df.to_csv("output.csv", index=False)
 
 ```

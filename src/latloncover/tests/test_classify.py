@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch, Mock
 import pandas as pd
-from cover.classify import add_classifications
+from latloncover.classify import add_classifications
 
 CROPSPACE_XML = """
 <data>
@@ -21,7 +21,7 @@ CROPSPACE_CSV = """Value, Category, Count,  Acreage
 
 
 class TestLatLonCov(unittest.TestCase):
-    @patch('cover.classify.requests')
+    @patch('latloncover.classify.requests')
     def test_add_classifications(self, mock_requests):
          # returns XML with URL simulating cropspace first response
         mock_requests.post.return_value = Mock(text=CROPSPACE_XML)
