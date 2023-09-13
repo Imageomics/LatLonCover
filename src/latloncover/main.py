@@ -1,6 +1,6 @@
 import click
 import pandas as pd
-from cover.classify import add_classifications
+from latloncover.classify import add_classifications
 
 
 @click.command()

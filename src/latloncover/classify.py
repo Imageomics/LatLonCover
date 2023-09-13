@@ -2,7 +2,7 @@ from io import StringIO
 import pandas as pd
 import requests
 import xml.etree.ElementTree as ET
-from cover.LatLonConv import add_albers_bounding_boxes
+from latloncover.LatLonConv import add_albers_bounding_boxes
 
 LAND_USE_URL="https://nassgeodata.gmu.edu/axis2/services/CDLService/GetCDLStat"
 SUB_CATEGORIES_CSV_URL="https://raw.githubusercontent.com/Imageomics/LatLonCover/main/cropScapeDocumentation/CDL_subcategories.csv"

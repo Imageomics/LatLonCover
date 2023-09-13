@@ -1,6 +1,6 @@
 import unittest
 import pandas as pd
-from cover.LatLonConv import add_albers_bounding_boxes
+from latloncover.LatLonConv import add_albers_bounding_boxes
 
 
 class TestLatLonCov(unittest.TestCase):

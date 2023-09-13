@@ -6,27 +6,27 @@ This documentation summarizes how to use our function,  the data sources for the
 ## Usage
 The function that summarizes land coverage can be used from multiple ways:
 - [Our Website](https://huggingface.co/spaces/imageomics/LatLonCover)
-- A command line tool named `cover`
+- A command line tool named `latloncover`
 - In python code
 
 ### Installation
-To use the command line `cover` tool or the python function requires installing the LatLonCover package.
+To use the command line `latloncover` tool or the python function requires installing the LatLonCover package.
 This can be done by running the following command:
 ```
 pip install git+https://github.com/Imageomics/LatLonCover.git
 ```
 
 ### Command Line Interface
-The `cover` command line tool reads an input CSV and creates an output CSV with land coverage columns.
+The `latloncover` command line tool reads an input CSV and creates an output CSV with land coverage columns.
 
 Read an input CSV file `input.csv` and write an output CSV file `output.csv` where the latitude and longitude columns are `Lat` and `Lon`:
 ```
-cover --lat-col Lat --lon-col Lon input.csv output.csv
+latloncover --lat-col Lat --lon-col Lon input.csv output.csv
 ```
 
 Help command:
 ```
-cover --help
+latloncover --help
 ```
 
 ### Python API
@@ -52,11 +52,11 @@ The following python code will
 3) save the output CSV to `output.csv`
    
 ```python
-from pandas import pd
-import cover
+import pandas as pd
+import latloncover
 
 df = pd.read_csv("input.csv")
-df = cover.add_classifications(df, lat_col="Lat", lon_col="Lon")
+df = latloncover.add_classifications(df, lat_col="Lat", lon_col="Lon")
 df.to_csv("output.csv", index=False)
 
 ```
