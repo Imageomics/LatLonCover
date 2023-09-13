@@ -13,7 +13,7 @@ The function that summarizes land coverage can be used from multiple ways:
 To use the command line `latloncover` tool or the python function requires installing the LatLonCover package.
 This can be done by running the following command:
 ```
-pip install git+https://github.com/Imageomics/LatLonCover.git
+pip install latloncover
 ```
 
 ### Command Line Interface
