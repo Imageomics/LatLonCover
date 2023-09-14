@@ -3,7 +3,7 @@ This repo creates a function that summarizes land coverage around a location (as
 
 This documentation summarizes how to use our function,  the data sources for the function,  and concludes with a detailed descripion of function outputs.
 
-[![PyPI version](https://badge.fury.io/py/latloncover.svg)](https://badge.fury.io/py/latloncover) ![example workflow](https://github.com/Imageomics/LatLonCover/actions/workflows/run-tests.yml/badge.svg)
+[![PyPI version](https://badge.fury.io/py/latloncover.svg)](https://badge.fury.io/py/latloncover) ![Tests Status](https://github.com/Imageomics/LatLonCover/actions/workflows/run-tests.yml/badge.svg)
 ## Usage
 The function that summarizes land coverage can be used from multiple ways:
 - [Our Website](https://huggingface.co/spaces/imageomics/LatLonCover)
