@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch, Mock
 import pandas as pd
-from latloncover.classify import add_classifications
+from latloncover.classify import add_classifications, get_classification, create_name_lookup
 
 CROPSPACE_XML = """
 <data>
@@ -51,3 +51,23 @@ class TestLatLonCov(unittest.TestCase):
         self.assertEqual(result['D_small'].to_list(), [0.1])
         # Same value for big since mock_requests.get always returns the same value
         self.assertEqual(result['D_big'].to_list(), [0.1])
+
+    @patch('latloncover.classify.add_classifications')
+    def test_get_classification(self, mock_add_classifications):
+        lat = 36.0053695
+        lon = 78.9469494
+        mock_add_classifications.return_value = pd.DataFrame.from_records([{
+            "A_big": 0.9,
+            "A_small": 0.7,
+            "lat": lat,
+            "lon": lon
+        }])
+        result = get_classification(lat=lat, lon=lon)
+        self.assertEqual(list(result.keys()), ["A_big", "A_small"])
+        self.assertEqual(result["A_big"], 0.9)
+        self.assertEqual(result["A_small"], 0.7)
+
+    def test_create_name_lookup(self):
+        name_lookup = create_name_lookup()
+        # Test known lookup value
+        self.assertEqual(name_lookup[1], "A")

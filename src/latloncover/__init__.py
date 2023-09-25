@@ -1,2 +1,2 @@
-from latloncover.classify import add_classifications
-__all__ = ['add_classifications']
+from latloncover.classify import add_classifications, get_classification
+__all__ = ['add_classifications', 'get_classification']

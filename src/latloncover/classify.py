@@ -1,11 +1,12 @@
 from io import StringIO
+import importlib.resources
+from functools import cache
 import pandas as pd
 import requests
 import xml.etree.ElementTree as ET
 from latloncover.LatLonConv import add_albers_bounding_boxes
 
 LAND_USE_URL="https://nassgeodata.gmu.edu/axis2/services/CDLService/GetCDLStat"
-SUB_CATEGORIES_CSV_URL="https://raw.githubusercontent.com/Imageomics/LatLonCover/main/cropScapeDocumentation/CDL_subcategories.csv"
 CLASSIFICATION_TYPES = ["A", "B", "D", "F", "G", "N", "W", "WL"]
 
 
@@ -37,7 +38,9 @@ def read_crop_scape_csv(path):
     return df
 
 
-def create_name_lookup(path=SUB_CATEGORIES_CSV_URL):
+@cache
+def create_name_lookup():
+    path = importlib.resources.files('latloncover').joinpath('CDL_subcategories.csv')
     crosswalk_df = pd.read_csv(path, index_col="Codes")
     return crosswalk_df["courseClass"]
 
@@ -90,3 +93,18 @@ def add_classifications(df:pd.DataFrame, lat_col: str, lon_col: str) -> pd.DataF
         df_enh[classificationType + "_big"] = [x.get(classificationType, 0.0) for x in classification_ary]
 
     return df_enh
+
+
+def get_classification(lat, lon):
+    """
+    Returns a dictionary with *_big and *_small land coverage details for input lat and lon.
+    :param lat: name of the latitude value
+    :param lon: name of the longitude value
+    """
+    df = pd.DataFrame.from_records([{
+        "lat": lat,
+        "lon": lon
+    }])
+    df = add_classifications(df, lat_col="lat", lon_col="lon")
+    df.drop(columns=["lat", "lon"], inplace=True)
+    return df.iloc[0].to_dict()
