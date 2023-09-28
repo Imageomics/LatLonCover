@@ -10,10 +10,10 @@ The function that summarizes land coverage can be used from multiple ways:
 - In python code
 
 ### Installation
-To use the command line `latloncover` tool or the python function requires installing the LatLonCover package.
+To use the command line `latloncover` tool or the python function requires installing the latloncover package.
 This can be done by running the following command:
 ```
-pip install git+https://github.com/Imageomics/LatLonCover.git
+pip install latloncover
 ```
 
 ### Command Line Interface
@@ -36,6 +36,7 @@ latloncover --help
 __add_classifications__(*df:pd.DataFrame, lat_col: str, lon_col: str*) -> *pd.DataFrame*
 
 > Returns a new dataframe with *_big and *_small land coverage columns added to df.
+> See [CDL_subcategories_legendCrse.csv](cropScapeDocumentation/CDL_subcategories_legendCrse.csv) for the list of column prefixes(Class) and their Definitions.
     
 Parameters:
 - __df__ - dataframe with latitude and longitude columns
@@ -44,7 +45,18 @@ Parameters:
 
 ----
 
-### Python Example
+__get_classification__(lat: number, lon: number) -> dictionary
+
+> Returns a dictionary with *_big and *_small land coverage data.
+> See [CDL_subcategories_legendCrse.csv](cropScapeDocumentation/CDL_subcategories_legendCrse.csv) for the list of column prefixes(Class) and their Definitions.
+
+Parameters:
+- __lat__ - decimal degree latitude
+- __lon__ - decimal degree longitude
+
+----
+
+### Python Examples
 
 The following python code will 
 1) read an input CSV file named `input.csv`
@@ -59,6 +71,15 @@ df = pd.read_csv("input.csv")
 df = latloncover.add_classifications(df, lat_col="Lat", lon_col="Lon")
 df.to_csv("output.csv", index=False)
 
+```
+
+----
+
+The following example prints landcoverage data for geocoordinate 36.0053695,-78.9469494.
+```python
+import latloncover
+landcoverage = latloncover.get_classification(36.0053695,-78.9469494)
+print(landcoverage)
 ```
 
 ## Data Sources

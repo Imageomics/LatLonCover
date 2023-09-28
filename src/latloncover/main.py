@@ -11,7 +11,7 @@ from latloncover.classify import add_classifications
 def main(input, output, lat_col, lon_col):
     """
     Read INPUT CSV file, lookup land coverage data for a lat/lon column.
-    Write OUTPUT CSV file with additional columsn for fractional land coverage data.
+    Write OUTPUT CSV file with additional columns for fractional land coverage data.
     """
     print(f"Reading {input}.")
     df = pd.read_csv(input)
